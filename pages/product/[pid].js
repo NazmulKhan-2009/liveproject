@@ -1,7 +1,7 @@
-import { useMemo, useState } from "react";
+import { useMemo } from "react";
 import { useSelector } from "react-redux";
 import FeaturedProducts from "../../components/FeaturedProducts/FeaturedProducts";
-import {ProductInitialState} from '../../reducers/products.reducers'
+import { ProductInitialState } from '../../reducers/products.reducers';
 
 
 export async function getStaticPaths() {
@@ -61,6 +61,7 @@ const productDetails=useSelector(state=>
 )
 console.log(pid)
 console.log(productDetails)
+
 
 if(!productDetails) return null;
 
